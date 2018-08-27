@@ -6070,9 +6070,9 @@ b, strong {
 	position: relative
 }
 
-.nk-navbar {
+.nk-navbar {			
 	padding: 33px 0;
-	font-size: .96rem;
+	font-size: 1.3rem;			/* nav 글씨 크기 */
 	z-index: 1000;
 	transition: background-color .3s;
 	will-change: background-color
@@ -6106,8 +6106,8 @@ b, strong {
 	visibility: visible
 }
 
-.nk-navbar.nk-navbar-transparent {
-	background-color: transparent
+.nk-navbar.nk-navbar-transparent {			
+	background-color: #fff			/* nav 뒷배경 색 */
 }
 
 .nk-navbar, .nk-navbar.nk-navbar-solid {
@@ -6241,7 +6241,7 @@ b, strong {
 	padding: 6px 14.6px;
 	display: block;
 	text-transform: uppercase;
-	font-weight: 500
+	font-weight: 900;
 }
 
 .nk-navbar .nk-nav>li.active>a, .nk-navbar .nk-nav>li>a:hover {
@@ -6314,12 +6314,12 @@ b, strong {
 }
 
 .nk-navbar.nk-navbar-white-text-on-top .nk-nav>li>a {
-	color: #000
+	color: #000			/* 글씨색이다 */
 }
 
 .nk-navbar.nk-navbar-white-text-on-top .nk-nav>li.active>a, .nk-navbar.nk-navbar-white-text-on-top .nk-nav>li>a:hover
 	{
-	color: #fff
+	color: #209CCE
 }
 
 .nk-navbar.nk-navbar-white-text-on-top.nk-navbar-solid .nk-nav>li>a {
