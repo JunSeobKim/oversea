@@ -6319,17 +6319,17 @@ b, strong {
 
 .nk-navbar.nk-navbar-white-text-on-top .nk-nav>li.active>a, .nk-navbar.nk-navbar-white-text-on-top .nk-nav>li>a:hover
 	{
-	color: #209CCE
+	color: #209CCE		/* 호버 글씨색 변경 */
 }
 
 .nk-navbar.nk-navbar-white-text-on-top.nk-navbar-solid .nk-nav>li>a {
-	color: inherit
+	color: #000 		/* 글씨색이다 */
 }
 
 .nk-navbar.nk-navbar-white-text-on-top.nk-navbar-solid .nk-nav>li.active>a,
 	.nk-navbar.nk-navbar-white-text-on-top.nk-navbar-solid .nk-nav>li>a:hover
 	{
-	color: #0e0e0e
+	color: #209CCE		/* 호버 글씨색 변경 */
 }
 
 .nk-navbar.nk-navbar-white-text-on-top .nk-nav-logo .nk-nav-logo-onscroll
