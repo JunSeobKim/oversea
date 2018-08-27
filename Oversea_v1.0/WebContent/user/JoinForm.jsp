@@ -33,7 +33,7 @@
         <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
             <div class="container">
                 <div class="nk-nav-table">
-                    <a href="index.html" class="nk-nav-logo">
+                    <a href="../index.html" class="nk-nav-logo">
                         <img src="../assets/images/logo.png" alt="" width="200" class="nk-nav-logo-onscroll">
                         <img src="../assets/images/logo.png" alt="" width="200">
                     </a>
@@ -222,5 +222,6 @@
         </form>
     </div>
 
+	
 </body>
 </html>
