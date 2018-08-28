@@ -10,7 +10,7 @@
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
 	
 <br><br><br><br><br><br><br>
-	<form action="CPPE_signupProc.jsp" name="form" method="post">
+	<form action="user/oversea_joinProc.jsp" name="form" method="post">
  <table>
   
   <tr>
@@ -54,14 +54,8 @@
    	휴대폰
    </td> 
    <td class="td2">
-   	<select name="ph1">
-       <option value="010">010</option>
-       <option value="011">011</option>
-       <option value="016">016</option>
-       <option value="017">017</option>
-       <option value="019">019</option>
-     </select>
-     - <input type="text" name="ph2" size="5" maxlength="4" required> - <input type="text" name="ph3" size="5" maxlength="4" required>
+   	<input type="number" name="ph1" size="4" maxlength="3" required>
+     - <input type="number" name="ph2" size="5" maxlength="4" required> - <input type="number" name="ph3" size="5" maxlength="4" required>
    </td>
   </tr>
   
@@ -89,7 +83,6 @@
    <hr>
    <br>
     <input type="submit" value="가입하기" onclick="regChk()">&nbsp;
-    <input type="button" value="취소" onclick="regCancel()">
    </td>
   </tr>
  </table>
