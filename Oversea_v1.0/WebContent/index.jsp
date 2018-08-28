@@ -56,19 +56,19 @@
 				<div class="carousel-inner">
 					<!--슬라이드1-->
 					<div class="item active"> 
-						<img src="assets/images/background1.jpg" style="width:100%" alt="First slide">
+						<img src="assets/images/osaka_banner.png" style="width:100%" alt="First slide">
 					</div>
 					<!--슬라이드1-->
 			
 					<!--슬라이드2-->
 					<div class="item"> 
-						<img src="assets/images/background2.jpg" style="width:100%" data-src="" alt="Second slide">
+						<img src="assets/images/shanghai_banner.png" style="width:100%" data-src="" alt="Second slide">
 					</div>
 					<!--슬라이드2-->
 					
 					<!--슬라이드3-->
 					<div class="item"> 
-						<img src="assets/images/background3.png" style="width:100%" data-src="" alt="Third slide">
+						<img src="assets/images/paris_banner.png" style="width:100%" data-src="" alt="Third slide">
 					</div>
 					<!--슬라이드3-->
 				</div>
