@@ -25,23 +25,23 @@ pageEncoding="UTF-8"%>
         <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
             <div class="container">
                 <div class="nk-nav-table">
-                    <a href="../index.html" class="nk-nav-logo">
-                        <img src="../assets/images/logo.png" alt="" width="200" class="nk-nav-logo-onscroll">
-                        <img src="../assets/images/logo.png" alt="" width="200">
+                    <a href="index.jsp" class="nk-nav-logo">
+                        <img src="assets/images/logo.png" alt="" width="200" class="nk-nav-logo-onscroll">
+                        <img src="assets/images/logo.png" alt="" width="200">
                     </a>
 
                     <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
                         <li>
-                            <a href="../index.html#about">여행지추천</a>
+                            <a href="index.jsp#about">여행지추천</a>
                         </li>
                         <li>
-                            <a href="../index.html#contact">환율정보</a>
+                            <a href="index.jsp#contact">환율정보</a>
                         </li>
                         <li>
                             <a href="oversea_loginform.jsp">로그인</a>
                         </li>
                         <li>
-                            <a href="../blog.html">검색</a>
+                            <a href="blog.html">검색</a>
                         </li>
                     </ul>
 

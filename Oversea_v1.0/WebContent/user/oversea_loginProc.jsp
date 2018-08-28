@@ -24,7 +24,7 @@ pageEncoding="UTF-8"%>
 	session.setMaxInactiveInterval(60*60);
 %>
 <script type="text/javascript">
-location.href="../index.html";
+location.href="../index.jsp";
 </script>
 <%  }else if(rst == 1){ %>
 <script type="text/javascript">
