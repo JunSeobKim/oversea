@@ -2,6 +2,7 @@ package oversea_member;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+
 import java.sql.PreparedStatement;
 
 import oversea_member.oversea_member;
@@ -105,5 +106,29 @@ public class oversea_memberDao {
 			   ConnUtil.close(rs, ps, conn);
 			  }
 			  return email;
-			 }
+		 }
+		 // 비밀번호 찾기
+		 public String findpw(oversea_member oversea){
+			  String pw = null;
+			  Connection conn = null;
+			  PreparedStatement ps = null;
+			  ResultSet rs = null;
+			  try{
+			   conn = ConnUtil.getConnection();
+			   String sql = "select passwd from user where email=? and name=? and phone=?";
+			   ps = conn.prepareStatement(sql);
+			   ps.setString(1, oversea.getEmail());
+			   ps.setString(2, oversea.getName());
+			   ps.setString(3, oversea.getPhone());
+			   rs = ps.executeQuery();
+			   while(rs.next()){
+			    pw = rs.getString("passwd");
+			   }
+			  }catch(Exception e){
+			   e.printStackTrace();
+			  }finally{
+			   ConnUtil.close(rs, ps, conn);
+			  }
+			  return pw;
+		}
 }

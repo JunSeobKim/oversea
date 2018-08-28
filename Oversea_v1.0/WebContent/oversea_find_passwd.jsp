@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>Oversea 비밀번호 찾기</title>
 
 	<meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
     <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
@@ -20,7 +20,9 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
     
     <link rel="stylesheet" href="assets/css/combined.css">
-
+	
+	<script language="JavaScript" src="assets/js/oversea_findpw.js" charset="utf-8"></script>
+	
     <!-- END: Styles -->
 </head>
 <body>
@@ -29,7 +31,7 @@
 	
 	<br><br><br><br><br><br><br><br><br><br>
 	<h2>비밀번호 찾기</h2>
-	<form action="" name="form" method="post" margin-top="100">
+	<form action="user/oversea_find_passwdProc.jsp" name="form" method="post" margin-top="100">
 		<table>
 			<tr>
 			 <td class="td1">
