@@ -8,7 +8,7 @@ pageEncoding="UTF-8"%>
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Oversea 로그인하기</title>
+<title>Oversea 로그인</title>
 
 <!-- START: Styles -->
 
@@ -40,15 +40,19 @@ function loginchk(){
 </script>
 </head>
 <body>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
+    
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
     
     <form action="user/oversea_loginProc.jsp" method="post" class="signUp" id="signupForm">
    <h1 class="signUpTitle">로그인</h1>
    <input name="email" type="text" class="signUpInput" placeholder="이메일" autofocus required>
    <input name="passwd" type="password" class="signUpInput" placeholder="비밀번호" required>
    <input type="submit" value="로그인" class="signUpButton" onclick="loginchk()">
-
+   </form>
+   <button onclick="location='oversea_joinform.jsp'">회원가입</button>
+   
+   <a href="oversea_choice_idpw.jsp">아이디/비밀번호 찾기</a>
 </body>
 </html>

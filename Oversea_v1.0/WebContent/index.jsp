@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Oversea 메인</title>
 
 	<meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
     <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
@@ -20,79 +20,82 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
     
     <link rel="stylesheet" href="assets/css/combined.css">
-
+	<link rel="stylesheet" href="assets/css/scroll_button.css">
+	<link rel="stylesheet" href="assets/css/oversea_index.css">
+	
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+			
+	<script language="javascript" type="text/javascript" src="assets/js/scroll.js"></script>
+	
     <!-- END: Styles -->
 
 </head>
 <body>
 	 <jsp:include page="user/nav.jsp" flush="false"></jsp:include>
-
 	<div class="nk-main">
-
         <!-- START: Header Title -->
         <div class="nk-header-title nk-header-title-full">
+        	<!-- 
             <div class="bg-image">
                 <div style="background-image: url('assets/images/background.png');"></div>
                 <div class="bg-image-overlay" style="background-color: rgba(12, 12, 12, 0.25);"></div>
-                <!-- style="background-color: rgba(12, 12, 12, 0.6);" -->
             </div>
-            <div class="nk-header-table">
-                <div class="nk-header-table-cell">
-                    <div class="container">
-
-                        <!-- 
-                        	<h2 class="nk-subtitle text-white">New Branding Agency</h2>
-                         -->
-
-
-                        <h1 class="nk-title display-1 text-white">
-                        	오사카              
-                          <!--
-                          <br> 
-                          <em class="fw-400">you publish on the web</em> 
-                          --> 
-                        </h1>
-
-
-                        <div class="nk-gap"></div>
-                        <div class="nk-header-text text-white">
-                            <div class="nk-gap-4"></div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            
+             -->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+				<!--페이지
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				페이지-->
+			
+				<div class="carousel-inner">
+					<!--슬라이드1-->
+					<div class="item active"> 
+						<img src="assets/images/background1.jpg" style="width:100%" alt="First slide">
+					</div>
+					<!--슬라이드1-->
+			
+					<!--슬라이드2-->
+					<div class="item"> 
+						<img src="assets/images/background2.jpg" style="width:100%" data-src="" alt="Second slide">
+					</div>
+					<!--슬라이드2-->
+					
+					<!--슬라이드3-->
+					<div class="item"> 
+						<img src="assets/images/background3.png" style="width:100%" data-src="" alt="Third slide">
+					</div>
+					<!--슬라이드3-->
+				</div>
+				
+				<!--이전, 다음 버튼-->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+				<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
+			</div> 
+			         
             <div>
-                <a class="nk-header-title-scroll-down text-white" href="#nk-header-title-scroll-down">
-                    <span class="pe-7s-angle-down"></span>
-                </a>
+                <a class="scroll-button" onclick="fnMove()">
+                	<font color=white>NEWSFEED</font>
+                	<span class="demoSpan1"></span>
+               	</a>
             </div>
-            
         </div>
 
-        <div id="nk-header-title-scroll-down"></div>
-
         <!-- END: Header Title -->
-
+		<div id="newsfeed">
+		</div>
         <!-- START: NewsFeed -->
-        <div class="bg-white" id="nf">
+        <div class="ov_newsfeed">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2 text-xs-center">
-                     
-                        <div class="nk-gap-4 mt-9"></div>
-					<!--
-                        <div class="nk-gap mnt-5"></div>
-                     -->
-                     
-                        <h1><br><br>N E W S F E E D</h1>
-                        </p>
-
-                   
-
-                        <div class="nk-gap-4 mt-25"></div>
+                	<!-- col-lg-8 offset-lg-2 text-xs-center -->
+                    <div class="ov_newsfeed_banner">
+                        <h1>N E W S F E E D</h1>
                     </div>
                 </div>
             </div>
@@ -100,7 +103,19 @@
         <!-- END: NewsFeed -->
         
 		<!-- START: NewsFeed BackGround -->
-		 <div class="bg-grey-4" id="nf_bg">
+		 <div class="ov_newsfeed_background" id="nf_bg" style="margin-bottom: 1000px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-xs-center">
+                        <div class="nk-gap-4 mt-60"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- END: NewsFeed BackGround -->
+		
+		<!-- START: 여백 -->
+		<div class="bg-white" id="nf_bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-xs-center">
@@ -109,222 +124,8 @@
                 </div>
             </div>
         </div>
-		<!-- END: NewsFeed BackGround -->
+		<!-- END: 여백 -->
 		
-        <!-- START: Portfolio -->
-        <div class="nk-box bg-white" id="projects">
-            <div class="nk-gap-4 mt-5"></div>
-
-            <h2 class="text-xs-center display-4">Best Projects</h2>
-
-            <div class="nk-gap mnt-6"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="text-xs-center">Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus. Vestibulum gravida volutpat ipsum non ultrices.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="nk-gap-2 mt-12"></div>
-            <div class="container">
-            <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols">
-
-
-                <div class="nk-isotope-item" data-filter="Mockup">
-                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                        <a href="portfolio-single.html" class="nk-portfolio-item-link"></a>
-                        <div class="nk-portfolio-item-image">
-                            <div style="background-image: url('assets/images/portfolio-7-sm.jpg');"></div>
-                        </div>
-                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
-                            <div>
-                                <h2 class="portfolio-item-title h3">Vinyl Record</h2>
-                                <div class="portfolio-item-category">Mockup</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="nk-isotope-item" data-filter="Print">
-                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                        <a href="portfolio-single.html" class="nk-portfolio-item-link"></a>
-                        <div class="nk-portfolio-item-image">
-                            <div style="background-image: url('assets/images/portfolio-4-sm.jpg');"></div>
-                        </div>
-                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
-                            <div>
-                                <h2 class="portfolio-item-title h3">Modern T-Shirt</h2>
-                                <div class="portfolio-item-category">Print</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="nk-isotope-item" data-filter="Branding">
-                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                        <a href="portfolio-single.html" class="nk-portfolio-item-link"></a>
-                        <div class="nk-portfolio-item-image">
-                            <div style="background-image: url('assets/images/portfolio-5-sm.jpg');"></div>
-                        </div>
-                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
-                            <div>
-                                <h2 class="portfolio-item-title h3">Minimal Bag</h2>
-                                <div class="portfolio-item-category">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="nk-isotope-item" data-filter="Design">
-                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                        <a href="portfolio-single.html" class="nk-portfolio-item-link"></a>
-                        <div class="nk-portfolio-item-image">
-                            <div style="background-image: url('assets/images/portfolio-9-sm.jpg');"></div>
-                        </div>
-                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
-                            <div>
-                                <h2 class="portfolio-item-title h3">Clean &amp; Groovy</h2>
-                                <div class="portfolio-item-category">Design</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="nk-isotope-item" data-filter="Design">
-                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                        <a href="portfolio-single.html" class="nk-portfolio-item-link"></a>
-                        <div class="nk-portfolio-item-image">
-                            <div style="background-image: url('assets/images/portfolio-3-sm.jpg');"></div>
-                        </div>
-                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
-                            <div>
-                                <h2 class="portfolio-item-title h3">Minimal Mobile App</h2>
-                                <div class="portfolio-item-category">Design</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="nk-isotope-item" data-filter="Print">
-                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                        <a href="portfolio-single.html" class="nk-portfolio-item-link"></a>
-                        <div class="nk-portfolio-item-image">
-                            <div style="background-image: url('assets/images/portfolio-8-sm.jpg');"></div>
-                        </div>
-                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
-                            <div>
-                                <h2 class="portfolio-item-title h3">White T-Shirt</h2>
-                                <div class="portfolio-item-category">Print</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="nk-isotope-item" data-filter="Branding">
-                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                        <a href="portfolio-single.html" class="nk-portfolio-item-link"></a>
-                        <div class="nk-portfolio-item-image">
-                            <div style="background-image: url('assets/images/portfolio-2-sm.jpg');"></div>
-                        </div>
-                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
-                            <div>
-                                <h2 class="portfolio-item-title h3">Business Card</h2>
-                                <div class="portfolio-item-category">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="nk-isotope-item" data-filter="Photography">
-                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                        <a href="portfolio-single.html" class="nk-portfolio-item-link"></a>
-                        <div class="nk-portfolio-item-image">
-                            <div style="background-image: url('assets/images/portfolio-6-sm.jpg');"></div>
-                        </div>
-                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
-                            <div>
-                                <h2 class="portfolio-item-title h3">Heja Stockholm</h2>
-                                <div class="portfolio-item-category">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="nk-isotope-item" data-filter="Photography">
-                    <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                        <a href="portfolio-single.html" class="nk-portfolio-item-link"></a>
-                        <div class="nk-portfolio-item-image">
-                            <div style="background-image: url('assets/images/portfolio-12-sm.jpg');"></div>
-                        </div>
-                        <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
-                            <div>
-                                <h2 class="portfolio-item-title h3">Paper Bag</h2>
-                                <div class="portfolio-item-category">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            </div>
-            <div class="nk-gap-4 mt-15"></div>
-        </div>
-        <!-- END: Portfolio -->
-
-        <!-- START: Reviews -->
-        <div class="nk-box bg-dark-1">
-            <div class="bg-image bg-image-parallax" style="background-image: url('assets/images/bg-pattern.jpg');"></div>
-            <div class="nk-gap-5 mnt-6"></div>
-            <div class="nk-gap-3"></div>
-            <div class="container-fluid">
-                <!-- START: Carousel -->
-                <div class="nk-carousel nk-carousel-all-visible text-white" data-autoplay="18000" data-dots="true">
-                    <div class="nk-carousel-inner">
-                        <div>
-                            <div>
-                                <blockquote class="nk-blockquote-style-1 text-white">
-                                    <p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.</p>
-                                    <cite>Michael Hopkins</cite>
-                                </blockquote>
-                                <div class="nk-gap-3 mt-10"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <blockquote class="nk-blockquote-style-1 text-white">
-                                    <p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.</p>
-                                    <cite>Michael Hopkins</cite>
-                                </blockquote>
-                                <div class="nk-gap-3 mt-10"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <blockquote class="nk-blockquote-style-1 text-white">
-                                    <p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.</p>
-                                    <cite>Michael Hopkins</cite>
-                                </blockquote>
-                                <div class="nk-gap-3 mt-10"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END: Carousel -->
-            </div>
-            <div class="nk-gap-4 mt-3"></div>
-        </div>
-        <!-- END: Reviews -->
-
         <!--
     START: Footer
 -->
