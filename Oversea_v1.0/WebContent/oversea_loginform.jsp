@@ -13,9 +13,9 @@ pageEncoding="UTF-8"%>
 <!-- START: Styles -->
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
     
-    <link rel="stylesheet" href="assets/css/combined.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 <!-- END: Styles -->
 
@@ -44,15 +44,31 @@ function loginchk(){
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
     
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
-    <form action="user/oversea_loginProc.jsp" method="post" class="signUp" id="signupForm">
-   <h1 class="signUpTitle">로그인</h1>
-   <input name="email" type="text" class="signUpInput" placeholder="이메일" autofocus required>
-   <input name="passwd" type="password" class="signUpInput" placeholder="비밀번호" required>
-   <input type="submit" value="로그인" class="signUpButton" onclick="loginchk()">
-   </form>
-   <button onclick="location='oversea_joinform.jsp'">회원가입</button>
-   
-   <a href="oversea_choice_idpw.jsp">아이디/비밀번호 찾기</a>
+
+		<div id="login">
+			<h3><strong>Welcome.</strong>Please login.</h3>
+				<form method="post" action="user/oversea_loginProc.jsp">
+					<fieldset>
+					
+						<p><input type="text" required value="Email" id="email"
+								onBlur="if(this.value=='')this.value='Email'" 
+									onFocus="if(this.value=='Email')this.value='' "></p>
+						
+						<p><input type="password" required value="Password" id="passwd"
+								onBlur="if(this.value=='')this.value='Password'"
+									onFocus="if(this.value=='Password')this.value='' "></p>
+						
+						<p><a href="oversea_choice_idpw.jsp">Forgot Password?</a></p>
+						
+						<p><input type="submit" value="Login" onclick="loginchk()"></p>
+					
+					</fieldset>
+					
+				</form>
+
+	
+				<button class="join" onclick="location.href='oversea_joinform.jsp' ">Join us</button>
+		</div>
+
 </body>
 </html>
