@@ -68,8 +68,7 @@ function loginchk(){
 					</fieldset>
 					
 				</form>
-				
-				<p><span class="btn-round">or</span></p>
+
 	
 				<button class="join" onclick="location.href='oversea_joinform.jsp' ">Join us</button>
 		</div>
