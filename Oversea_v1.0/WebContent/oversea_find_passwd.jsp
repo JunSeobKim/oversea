@@ -26,6 +26,56 @@
 <body>
 	
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
+	
+	<br><br><br><br><br><br><br><br><br><br>
+	<h2>비밀번호 찾기</h2>
+	<form action="" name="form" method="post" margin-top="100">
+		<table>
+			<tr>
+			 <td class="td1">
+			 	이름 
+			 </td> 
+			 <td class="td2">
+			 	<input type="text" size="20" maxlength="10" name="name" required>
+			 </td>
+			</tr>
+			
+			<tr>
+			 <td class="td1">
+			 	이메일
+			 </td> 
+			 <td class="td2">
+			 	<input type="text" size="20" maxlength="20" name="email" required>
+			 </td>
+			</tr>
+			
+			<tr>
+				<td class="td1">
+					휴대폰
+				</td> 
+				<td class="td2">
+					<select name="ph1">
+						<option value="010">010</option>
+						<option value="011">011</option>
+						<option value="016">016</option>
+						<option value="017">017</option>
+						<option value="019">019</option>
+					</select>
+						-
+					<input type="text" name="ph2" size="5" maxlength="4" required>
+						-
+					<input type="text" name="ph3" size="5" maxlength="4" required>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2">
+				<hr>
+				<br>
+					<input type="submit" value="확인" onclick="">
+				</td>
+			</tr>
+		</table>
+	</form>
 
 </body>
 </html>
