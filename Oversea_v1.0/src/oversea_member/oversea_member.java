@@ -11,6 +11,7 @@ public class oversea_member {
 	private String birth;
 	private String zipcode;
 	private String addr;
+	
 	public String getName() {
 		return name;
 	}
