@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>Oversea ì•„ì´ë”” ì°¾ê¸°</title>
 
 <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
     <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
@@ -20,7 +20,9 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
     
     <link rel="stylesheet" href="assets/css/combined.css">
-
+	
+	<script language="JavaScript" src="assets/js/oversea_findid.js" charset="utf-8"></script>
+	
     <!-- END: Styles -->
 </head>
 <body>
@@ -28,12 +30,12 @@
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
 	
 	<br><br><br><br><br><br><br><br><br><br>
-	<h2>¾ÆÀÌµğ Ã£±â</h2>
-	<form action="" name="form" method="post" margin-top="100">
+	<h2>ì•„ì´ë”” ì°¾ê¸°</h2>
+	<form action="user/oversea_find_idProc.jsp" name="form" method="post" margin-top="100">
 		<table>
 			<tr>
 			 <td class="td1">
-			 	ÀÌ¸§ 
+			 	ì´ë¦„ 
 			 </td> 
 			 <td class="td2">
 			 	<input type="text" size="20" maxlength="10" name="name" required>
@@ -42,7 +44,7 @@
 			
 			<tr>
 				<td class="td1">
-					ÈŞ´ëÆù
+					íœ´ëŒ€í°
 				</td> 
 				<td class="td2">
 					<select name="ph1">
@@ -62,7 +64,7 @@
 				<td align="center" colspan="2">
 				<hr>
 				<br>
-					<input type="submit" value="È®ÀÎ" onclick="">
+					<input type="submit" value="ì•„ì´ë”” ì°¾ê¸°" onclick="findid()">
 				</td>
 			</tr>
 		</table>

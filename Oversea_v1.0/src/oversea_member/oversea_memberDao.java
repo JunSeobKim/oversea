@@ -91,7 +91,7 @@ public class oversea_memberDao {
 			  ResultSet rs = null;
 			  try{
 			   conn = ConnUtil.getConnection();
-			   String sql = "select id from user where name=? and phone=?";
+			   String sql = "select email from user where name=? and phone=?";
 			   ps = conn.prepareStatement(sql);
 			   ps.setString(1, oversea.getName());
 			   ps.setString(2, oversea.getPhone());

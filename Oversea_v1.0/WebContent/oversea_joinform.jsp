@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>Oversea 회원가입</title>
 </head>
 <body>
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
