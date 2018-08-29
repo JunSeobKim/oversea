@@ -42,7 +42,7 @@
 	
 	<center>
 	
-	<h2>아이디 찾기</h2>
+	<h2 style="color:#ffffff">아이디 찾기</h2>
 	<form action="user/oversea_find_idProc.jsp" name="form" method="post" margin-top="100">
 		
 		<div class="col-3" style="text-align:left;color:#ffffff">

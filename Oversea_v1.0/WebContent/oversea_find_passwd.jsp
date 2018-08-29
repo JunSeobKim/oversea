@@ -38,7 +38,7 @@
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
 	
 	<br><br><br><br><br><br><br><br><br><br>
-	<h2>비밀번호 찾기</h2>
+	<h2 style="color:#ffffff">비밀번호 찾기</h2>
 	<form action="user/oversea_find_passwdProc.jsp" name="form" method="post" margin-top="100">
 
 		<div class="col-3" style="text-align:left;color:#ffffff">
