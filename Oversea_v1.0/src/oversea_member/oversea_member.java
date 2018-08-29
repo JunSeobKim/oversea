@@ -11,6 +11,8 @@ public class oversea_member {
 	private String birth;
 	private String zipcode;
 	private String addr;
+	private String addr1;
+	private String addr2;
 	
 	public String getName() {
 		return name;
@@ -61,10 +63,25 @@ public class oversea_member {
 		this.zipcode = zipcode;
 	}
 	public String getAddr() {
+		StringBuffer sb2 = new StringBuffer(addr1);
+		sb2.append(addr2);
+		addr = sb2.toString();
 		return addr;
 	}
 	public void setAddr(String addr) {
 		this.addr = addr;
+	}
+	public String getAddr1() {
+		return addr1;
+	}
+	public void setAddr1(String addr1) {
+		this.addr1 = addr1;
+	}
+	public String getAddr2() {
+		return addr2;
+	}
+	public void setAddr2(String addr2) {
+		this.addr2 = addr2;
 	}
 	public String getPhone() {
 		StringBuffer sb = new StringBuffer(ph1);
