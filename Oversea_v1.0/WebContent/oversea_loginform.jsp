@@ -15,7 +15,7 @@ pageEncoding="UTF-8"%>
     <!-- Google Fonts -->
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
     
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/oversea_loginForm.css">
 
 <!-- END: Styles -->
 
@@ -44,31 +44,29 @@ function loginchk(){
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
     
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-		<div id="login">
-			<h3><strong>Welcome.</strong>Please login.</h3>
-				<form method="post" action="user/oversea_loginProc.jsp">
-					<fieldset>
+	<div class="login_background"></div>
+	<div id="login">
+		<h3><font color="white"><strong>Welcome.</strong>Please login.</font></h3>
+			<form method="post" action="user/oversea_loginProc.jsp">
+				<fieldset>
+				
+					<p><input type="text" required value="Email" name="email"
+							onBlur="if(this.value=='')this.value='Email'" 
+								onFocus="if(this.value=='Email')this.value='' "></p>
 					
-						<p><input type="text" required value="Email" name="email"
-								onBlur="if(this.value=='')this.value='Email'" 
-									onFocus="if(this.value=='Email')this.value='' "></p>
-						
-						<p><input type="password" required value="Password" name="passwd"
-								onBlur="if(this.value=='')this.value='Password'"
-									onFocus="if(this.value=='Password')this.value='' "></p>
-						
-						<p><a href="oversea_choice_idpw.jsp">Forgot Password?</a></p>
-						
-						<p><input type="submit" value="Login" onclick=""></p>
+					<p><input type="password" required value="Password" name="passwd"
+							onBlur="if(this.value=='')this.value='Password'"
+								onFocus="if(this.value=='Password')this.value='' "></p>
 					
-					</fieldset>
+					<p><a href="oversea_choice_idpw.jsp">Forgot Password?</a></p>
 					
-				</form>
+					<p><input type="submit" value="Login" onclick=""></p>
+				
+				</fieldset>
+				
+			</form>
 
-	
-				<button class="join" onclick="location.href='oversea_joinform.jsp' ">Join us</button>
-		</div>
-
+			<button class="join" onclick="location.href='oversea_joinform.jsp' ">Join us</button>
+	</div>
 </body>
 </html>
