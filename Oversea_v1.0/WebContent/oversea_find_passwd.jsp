@@ -64,7 +64,7 @@
    	&nbsp;<input type="number" name="ph3" maxlength="4" class="form-control" required>
    		</div>
    	</div>
-					
+	<br><br><br>
 	<div class="col-3">
 		<button type="button" onclick="" class="btn btn-primary btn-lg btn-block">비밀번호 찾기</button>
 	</div>

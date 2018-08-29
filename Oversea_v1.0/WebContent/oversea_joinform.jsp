@@ -23,9 +23,8 @@ function checkPost()
 
 
 </head>
-<body style="background-image:url('assets/images/login_bg.jpg');background-size:100%; ">
+<body style="background-image:url('assets/images/join_bg.png'); background-size:100%; ">
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
-	
 <br><br><br><br><br><br><br>
 <form action="user/oversea_joinProc.jsp" name="form" method="post">
 <center>

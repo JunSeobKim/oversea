@@ -48,7 +48,6 @@ strong {
 	margin: 50px auto;
 	width: 300px;
 	text-align: center;
-	z-index: 1;
 }
 
 form fieldset input[type="text"], input[type="password"] {
@@ -79,13 +78,17 @@ form fieldset input[type="submit"] {
 }
 
 form fieldset a {
-	color: #5a5656;
-	font-size: 10px;
+	
+	color: #fff;
+	font-size: 16px;
+	
 }
 
 form fieldset a:hover {
+	color: #fff;
 	text-decoration: underline;
 }
+
 
 .btn-round {
 	background: #5a5656;
@@ -148,6 +151,28 @@ form fieldset a:hover {
 }
 
 .login_background {
-	
-	z-index: 0;
+	background-image: url("assets/images/lbackground.png");
+	background-size: 100%;
+	width: 400px;
+	height: 600px;
+}
+.findIdPw{
+	background-color: rgba(255, 255, 255, 0.0);
+	display: block;
+	position: absolute;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.5rem;
+	bottom: 65px;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	height: 60px;
+	opacity: .6;
+	transition: opacity .5s;
+	-webkit-touch-callout: none;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
 }

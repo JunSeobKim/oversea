@@ -31,7 +31,7 @@
 	
     <!-- END: Styles -->
 </head>
-<body>
+<body style="background-image:url('assets/images/find_id_bg.png');background-size:100%; ">
 <center>
 
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
