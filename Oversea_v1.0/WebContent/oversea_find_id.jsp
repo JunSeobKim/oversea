@@ -6,6 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Oversea 아이디 찾기</title>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
     <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
     <meta name="author" content="nK">
@@ -26,51 +32,45 @@
     <!-- END: Styles -->
 </head>
 <body>
+<center>
 
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
 	
+	
+	
 	<br><br><br><br><br><br><br><br><br><br>
+	
+	<center>
+	
 	<h2>아이디 찾기</h2>
 	<form action="user/oversea_find_idProc.jsp" name="form" method="post" margin-top="100">
-		<table>
-			<tr>
-			 <td class="td1">
-			 	이름 
-			 </td> 
-			 <td class="td2">
-			 	<input type="text" size="20" maxlength="10" name="name" required>
-			 </td>
-			</tr>
-			
-			<tr>
-				<td class="td1">
-					휴대폰
-				</td> 
-				<td class="td2">
-					<select name="ph1">
-						<option value="010">010</option>
-						<option value="011">011</option>
-						<option value="016">016</option>
-						<option value="017">017</option>
-						<option value="019">019</option>
-					</select>
-						-
-					<input type="text" name="ph2" size="5" maxlength="4" required>
-						-
-					<input type="text" name="ph3" size="5" maxlength="4" required>
-				</td>
-			</tr>
-			<tr>
-				<td align="center" colspan="2">
-				<hr>
+		
+		<div class="col-3" style="text-align:left;color:#ffffff">
+                     이름<input type="text" maxlength="10" name="name" class="form-control" required>
+   	 	</div>
+			 	
 				<br>
-					<input type="submit" value="아이디 찾기" onclick="findid()">
-				</td>
-			</tr>
-		</table>
+				
+	<div class="form-row col-3" style="text-align:left;color:#ffffff">
+   		<div class="col">
+   	휴대폰<input type="number" name="ph1" maxlength="3" class="form-control" required>
+   		</div>
+   		<div class="col">
+   	&nbsp;<input type="number" name="ph2" maxlength="4" class="form-control" required>
+   		</div>
+   		<div class="col">
+   	&nbsp;<input type="number" name="ph3" maxlength="4" class="form-control" required>
+   		</div>
+   	</div>
+   	
+   				<br>
+   
+	<div class="col-3">
+		<button type="button" onclick="findid()" class="btn btn-primary btn-lg btn-block">아이디 찾기</button>
+	</div>
 	</form>
 	
-	
+	</center>
 
 </body>
 </html>
