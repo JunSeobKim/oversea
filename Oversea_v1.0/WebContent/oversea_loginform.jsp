@@ -39,17 +39,16 @@ function loginchk(){
 
 </script>
 </head>
-<body style="background-image:url('assets/images/login_bg.jpg');background-size:100%; ">
+<body style="background-image:url('assets/images/login_bg.png');background-size:100%; ">
 
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
     
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<div class="login_background"></div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 	<div id="login">
 		<h3><font color="white"><strong>Welcome.</strong>Please login.</font></h3>
+			<br>
 			<form method="post" action="user/oversea_loginProc.jsp">
 				<fieldset>
-				
 					<p><input type="text" required value="Email" name="email"
 							onBlur="if(this.value=='')this.value='Email'" 
 								onFocus="if(this.value=='Email')this.value='' "></p>
@@ -57,8 +56,9 @@ function loginchk(){
 					<p><input type="password" required value="Password" name="passwd"
 							onBlur="if(this.value=='')this.value='Password'"
 								onFocus="if(this.value=='Password')this.value='' "></p>
-					
-					<p><a href="oversea_choice_idpw.jsp">Forgot Password?</a></p>
+					<p>
+						<a href="oversea_choice_idpw.jsp">Forgot Password?</a>
+					</p>
 					
 					<p><input type="submit" value="Login" onclick=""></p>
 				

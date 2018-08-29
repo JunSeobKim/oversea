@@ -5,6 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Oversea 아이디 / 비밀번호 찾기</title>
+<link rel="stylesheet" href="assets/css/oversea_choice_idpw.css">
+	
 </head>
 <body>
 
