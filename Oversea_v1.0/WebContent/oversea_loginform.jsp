@@ -50,17 +50,17 @@ function loginchk(){
 				<form method="post" action="user/oversea_loginProc.jsp">
 					<fieldset>
 					
-						<p><input type="text" required value="Email" id="email"
+						<p><input type="text" required value="Email" name="email"
 								onBlur="if(this.value=='')this.value='Email'" 
 									onFocus="if(this.value=='Email')this.value='' "></p>
 						
-						<p><input type="password" required value="Password" id="passwd"
+						<p><input type="password" required value="Password" name="passwd"
 								onBlur="if(this.value=='')this.value='Password'"
 									onFocus="if(this.value=='Password')this.value='' "></p>
 						
 						<p><a href="oversea_choice_idpw.jsp">Forgot Password?</a></p>
 						
-						<p><input type="submit" value="Login" onclick="loginchk()"></p>
+						<p><input type="submit" value="Login" onclick=""></p>
 					
 					</fieldset>
 					
