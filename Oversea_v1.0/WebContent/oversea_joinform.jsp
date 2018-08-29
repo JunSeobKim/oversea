@@ -6,6 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Oversea 회원가입</title>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 <!--
 <script>
 function checkPost()
@@ -17,92 +23,82 @@ function checkPost()
 
 
 </head>
-<body>
+<body style="background-image:url('assets/images/login_bg.jpg');background-size:100%; ">
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
 	
 <br><br><br><br><br><br><br>
-	<form action="user/oversea_joinProc.jsp" name="form" method="post">
- <table>
-  
-  <tr>
-   <td class="td1">
-   	이름 
-   </td> 
-   <td class="td2">
-   	<input type="text" size="20" maxlength="10" name="name" required>
-   </td>
-  </tr>
-  
-  <tr>
-   <td class="td1">
-   	이메일 
-   </td> 
-   <td>
-   	<input type="text" size="20" name="email" required>
-   </td>
-  </tr>
-  
-  <tr>
-   <td class="td1">
-   	비밀번호 
-   </td> 
-   <td class="td2">
-   	<input type="password" size="30" maxlength="20" name="passwd" required>
-   </td>
-  </tr>
-  
-    <tr>
-   <td class="td1">
-   	비밀번호 확인 
-   </td> 
-   <td class="td2">
-   	<input type="password" size="30" maxlength="20" name="re_passwd" onblur="passchk()" required>
-   </td>
-  </tr>
-  
-  <tr>
-   <td class="td1">
-   	휴대폰
-   </td> 
-   <td class="td2">
-   	<input type="number" name="ph1" size="4" maxlength="3" required>
-     - <input type="number" name="ph2" size="5" maxlength="4" required> - <input type="number" name="ph3" size="5" maxlength="4" required>
-   </td>
-  </tr>
-  
-  <tr>
-   <td class="td1">
-   	생년월일
-   </td> 
-   <td>
-   	<input type="text" size="10" maxlength="8" name="birth" required>
-   </td>
-  </tr>
-  
-  <tr>
-   <td class="td1">
-   	거주지 주소 
-   </td> 
-   <td class="td2">
-   	<input type="text" name="zipcode" size="10" id="sample6_postcode" readonly></input>
-   	<input type="button" value="우편번호체크" onClick="sample6_execDaumPostcode()"></input>
+<form action="user/oversea_joinProc.jsp" name="form" method="post">
+<center>
+		<div class="col-3" style="text-align:left;color:#ffffff">
+                     이름<input type="text" maxlength="10" name="name" class="form-control" required>
+   	 	</div>
+   	 	
+	<br>
+	
+		<div class="col-3" style="text-align:left;color:#ffffff">
+   		이메일 <input type="text" name="email" class="form-control" required>
+		</div>
+	
+	<br>
+	
+		<div class="col-3" style="text-align:left;color:#ffffff">
+   		비밀번호 <input type="password" maxlength="20" name="passwd" class="form-control" required>
+		</div>
+	
+	<br>
+	
+		<div class="col-3" style="text-align:left;color:#ffffff">
+		비밀번호 확인 <input type="password" maxlength="20" name="re_passwd" onblur="passchk()" class="form-control" required>
+		</div>
+		
+	<br>
+
+   	
+   	<div class="form-row col-3" style="text-align:left;color:#ffffff">
+   		<div class="col">
+   	휴대폰<input type="number" name="ph1" maxlength="3" class="form-control" required>
+   		</div>
+   		<div class="col">
+   	&nbsp;<input type="number" name="ph2" maxlength="4" class="form-control" required>
+   		</div>
+   		<div class="col">
+   	&nbsp;<input type="number" name="ph3" maxlength="4" class="form-control" required>
+   		</div>
+   	</div>
+
+    <br>
+
+		<div class="col-3" style="text-align:left;color:#ffffff">
+   		생년월일<input type="text" maxlength="8" name="birth" class="form-control" required>
+   		</div>
+   	
    	<br>
-   	<input type="text" name="addr1" id="sample6_address"></input><br>
-   	<input type="text" name="addr2" id="sample6_address2"></input>
 
-   </td>
-  </tr>
+	<div class="form-row col-3" style="text-align:left;color:#ffffff">
+		<div class="col-4">
+   		주소<input type="text" name="zipcode" size="10" id="sample6_postcode" class="form-control" readonly></input>
+   		</div>
+   		<div class="col-1">
+   		　<button type="button" class="btn btn-success" onClick="sample6_execDaumPostcode()">우편번호찾기</button>
+   		</div>
+   	</div>
+   	
+   	<br>
+   	
+   		<div class="col-3">
+   		<input type="text" name="addr1" id="sample6_address" class="form-control" readonly></input>
+   		</div>   		
+   		<br>
+   		<div class="col-3">
+   		<input type="text" name="addr2" id="sample6_address2" class="form-control"></input>
+   		</div>
 
-  <tr>
-   <td align="center" colspan="2">
-   <hr>
    <br>
-    <input type="submit" value="가입하기" onclick="regChk()">&nbsp;
-   </td>
-  </tr>
- </table>
+    <div class="col-3">
+    	<button type="button" onclick="regChk()" class="btn btn-primary btn-lg btn-block">가입하기</button>
+	</div>
 </form>
-
+</center>
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 <script>
     function sample6_execDaumPostcode() {

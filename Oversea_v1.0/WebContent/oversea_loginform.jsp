@@ -39,7 +39,7 @@ function loginchk(){
 
 </script>
 </head>
-<body>
+<body style="background-image:url('assets/images/login_bg.jpg');background-size:100%; ">
 
 	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
     
