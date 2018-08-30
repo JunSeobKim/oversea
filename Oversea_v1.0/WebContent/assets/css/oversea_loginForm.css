@@ -17,10 +17,14 @@
 
 /* ---------- GENERAL ---------- */
 body {
-	background: #ffffff;
 	font-color: #5a5656;
 	font: 100%/1.5em 'Open Sans', sans-serif;
 	margin: 0;
+	-webkit-touch-callout: none;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
 }
 
 a {
@@ -45,9 +49,15 @@ strong {
 
 /* ---------- LOGIN ---------- */
 #login {
-	margin: 50px auto;
-	width: 300px;
+	width: 450px;
 	text-align: center;
+	border: 1px #eceeef solid;
+	border-radius: 10px;;
+	padding: 60px 50px 60px 50px;
+	position:absolute;
+	top:35%;
+	left:40%;
+	margin:-50px 0 0 -50px;
 }
 
 form fieldset input[type="text"], input[type="password"] {
@@ -79,13 +89,13 @@ form fieldset input[type="submit"] {
 
 form fieldset a {
 	
-	color: #fff;
+	color: #8C8C8C;
 	font-size: 16px;
 	
 }
 
 form fieldset a:hover {
-	color: #fff;
+	color: #5D5D5D;
 	text-decoration: underline;
 }
 
@@ -170,9 +180,4 @@ form fieldset a:hover {
 	height: 60px;
 	opacity: .6;
 	transition: opacity .5s;
-	-webkit-touch-callout: none;
-	user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-webkit-user-select: none;
 }

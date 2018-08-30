@@ -103,17 +103,17 @@
         <!-- END: NewsFeed -->
         
 		<!-- START: NewsFeed BackGround -->
-		 <div class="ov_newsfeed_background" id="nf_bg" style="margin-bottom: 4000px;">
+		 <div class="ov_newsfeed_background" id="nf_bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-xs-center">
-                        <div class="nk-gap-4 mt-60">
+                        <div class="nk-gap-4 mt-60"></div>
                         	<img src="assets/images/main_feed1.png"></img>
                         	<img src="assets/images/main_feed2.png"></img>
                         	<img src="assets/images/main_feed3.png"></img>
                         	<img src="assets/images/main_feed4.png"></img>
                         	<img src="assets/images/main_feed5.png"></img>
-                        </div>
+                       <div class="nk-gap-4 mt-60"></div>
                     </div>
                 </div>
             </div>
