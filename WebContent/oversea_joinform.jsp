@@ -11,6 +11,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script language="javascript" type="text/javascript" src="assets/js/oversea_join.js"></script>
 
 <!--
 <script>
@@ -36,8 +37,9 @@ function checkPost()
 	
 		<div class="col-3" style="text-align:left;color:#ffffff">
    		이메일 <input type="text" name="email" class="form-control" required>
+   		<button onclick="emailCheck()">중복확인</button>
 		</div>
-	
+		
 	<br>
 	
 		<div class="col-3" style="text-align:left;color:#ffffff">
@@ -93,7 +95,7 @@ function checkPost()
    	</div>
 	<br>
 	<div class="col-3">
-	   <input type="submit" value="가입하기" onclick="insertoversea_member()" class="btn btn-primary btn-lg btn-block" />
+	   <input type="submit" value="가입하기" onclick="regChk()" class="btn btn-primary btn-lg btn-block" />
 	</div>
 </form>
 
