@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
 <!-- START: Styles -->
 
     <!-- Google Fonts -->
@@ -34,7 +34,7 @@
 
 </head>
 <body>
-	 <jsp:include page="user/nav.jsp" flush="false"></jsp:include>
+	<jsp:include page="user/oversea_after_login_nav.jsp" flush="false"></jsp:include>
 	<div class="nk-main">
         <!-- START: Header Title -->
         <div class="nk-header-title nk-header-title-full">
@@ -56,19 +56,19 @@
 				<div class="carousel-inner">
 					<!--슬라이드1-->
 					<div class="item active"> 
-						<img src="assets/images/background1.jpg" style="width:100%" alt="First slide">
+						<img src="assets/images/osaka_banner.png" style="width:100%" alt="First slide">
 					</div>
 					<!--슬라이드1-->
 			
 					<!--슬라이드2-->
 					<div class="item"> 
-						<img src="assets/images/background2.jpg" style="width:100%" data-src="" alt="Second slide">
+						<img src="assets/images/shanghai_banner.png" style="width:100%" data-src="" alt="Second slide">
 					</div>
 					<!--슬라이드2-->
 					
 					<!--슬라이드3-->
 					<div class="item"> 
-						<img src="assets/images/background3.png" style="width:100%" data-src="" alt="Third slide">
+						<img src="assets/images/paris_banner.png" style="width:100%" data-src="" alt="Third slide">
 					</div>
 					<!--슬라이드3-->
 				</div>
@@ -103,11 +103,17 @@
         <!-- END: NewsFeed -->
         
 		<!-- START: NewsFeed BackGround -->
-		 <div class="ov_newsfeed_background" id="nf_bg" style="margin-bottom: 1000px;">
+		 <div class="ov_newsfeed_background" id="nf_bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-xs-center">
                         <div class="nk-gap-4 mt-60"></div>
+                        	<img src="assets/images/main_feed1.png"></img>
+                        	<img src="assets/images/main_feed2.png"></img>
+                        	<img src="assets/images/main_feed3.png"></img>
+                        	<img src="assets/images/main_feed4.png"></img>
+                        	<img src="assets/images/main_feed5.png"></img>
+                       <div class="nk-gap-4 mt-60"></div>
                     </div>
                 </div>
             </div>

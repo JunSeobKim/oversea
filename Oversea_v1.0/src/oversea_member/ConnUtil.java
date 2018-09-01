@@ -19,8 +19,7 @@ public class ConnUtil {
   String url = "jdbc:mysql://localhost:3306/oversea?useUnicode=true&characterEncoding=utf8";
   String id = "root";
   String password = "oversea2a03";
-  Connection conn = DriverManager.getConnection(url, id,
-    password);
+  Connection conn = DriverManager.getConnection(url, id, password);
   return conn;
  }
  public static void close(PreparedStatement ps, Connection conn){
