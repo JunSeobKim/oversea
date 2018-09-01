@@ -1,16 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Oversea íšŒì›ê°€ìž…</title>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Oversea È¸¿ø°¡ÀÔ</title>
 
 <!--
 <script>
@@ -23,120 +17,131 @@ function checkPost()
 
 
 </head>
-<body style="background-image:url('assets/images/join_bg.png'); background-size:100%; ">
-	<jsp:include page="user/oversea_after_login_nav.jsp" flush="false"></jsp:include>
+<body>
+	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
+	
 <br><br><br><br><br><br><br>
-<form action="user/oversea_joinProc.jsp" name="form" method="post">
-<center>
-		<div class="col-3" style="text-align:left;color:#ffffff">
-                     ì´ë¦„<input type="text" maxlength="10" name="name" class="form-control" required>
-   	 	</div>
-   	 	
-	<br>
-	
-		<div class="col-3" style="text-align:left;color:#ffffff">
-   		ì´ë©”ì¼ <input type="text" name="email" class="form-control" required>
-		</div>
-	
-	<br>
-	
-		<div class="col-3" style="text-align:left;color:#ffffff">
-   		ë¹„ë°€ë²ˆí˜¸ <input type="password" maxlength="20" name="passwd" class="form-control" required>
-		</div>
-	
-	<br>
-	
-		<div class="col-3" style="text-align:left;color:#ffffff">
-		ë¹„ë°€ë²ˆí˜¸ í™•ì¸ <input type="password" maxlength="20" name="re_passwd" onblur="passchk()" class="form-control" required>
-		</div>
-		
-	<br>
-
-   	
-   	<div class="form-row col-3" style="text-align:left;color:#ffffff">
-   		<div class="col">
-   	íœ´ëŒ€í°<input type="number" name="ph1" maxlength="3" class="form-control" required>
-   		</div>
-   		<div class="col">
-   	&nbsp;<input type="number" name="ph2" maxlength="4" class="form-control" required>
-   		</div>
-   		<div class="col">
-   	&nbsp;<input type="number" name="ph3" maxlength="4" class="form-control" required>
-   		</div>
-   	</div>
-
-    <br>
-
-		<div class="col-3" style="text-align:left;color:#ffffff">
-   		ìƒë…„ì›”ì¼<input type="text" maxlength="8" name="birth" class="form-control" required>
-   		</div>
-   	
+	<form action="user/oversea_joinProc.jsp" name="form" method="post">
+ <table>
+  
+  <tr>
+   <td class="td1">
+   	ÀÌ¸§ 
+   </td> 
+   <td class="td2">
+   	<input type="text" size="20" maxlength="10" name="name" required>
+   </td>
+  </tr>
+  
+  <tr>
+   <td class="td1">
+   	ÀÌ¸ÞÀÏ 
+   </td> 
+   <td>
+   	<input type="text" size="20" name="email" required>
+   </td>
+  </tr>
+  
+  <tr>
+   <td class="td1">
+   	ºñ¹Ð¹øÈ£ 
+   </td> 
+   <td class="td2">
+   	<input type="password" size="30" maxlength="20" name="passwd" required>
+   </td>
+  </tr>
+  
+    <tr>
+   <td class="td1">
+   	ºñ¹Ð¹øÈ£ È®ÀÎ 
+   </td> 
+   <td class="td2">
+   	<input type="password" size="30" maxlength="20" name="re_passwd" onblur="passchk()" required>
+   </td>
+  </tr>
+  
+  <tr>
+   <td class="td1">
+   	ÈÞ´ëÆù
+   </td> 
+   <td class="td2">
+   	<input type="number" name="ph1" size="4" maxlength="3" required>
+     - <input type="number" name="ph2" size="5" maxlength="4" required> - <input type="number" name="ph3" size="5" maxlength="4" required>
+   </td>
+  </tr>
+  
+  <tr>
+   <td class="td1">
+   	»ý³â¿ùÀÏ
+   </td> 
+   <td>
+   	<input type="text" size="10" maxlength="8" name="birth" required>
+   </td>
+  </tr>
+  
+  <tr>
+   <td class="td1">
+   	°ÅÁÖÁö ÁÖ¼Ò 
+   </td> 
+   <td class="td2">
+   	<input type="text" name="zipcode" size="10" id="sample6_postcode" readonly></input>
+   	<input type="button" value="¿ìÆí¹øÈ£Ã¼Å©" onClick="sample6_execDaumPostcode()"></input>
    	<br>
+   	<input type="text" name="addr1" id="sample6_address"></input><br>
+   	<input type="text" name="addr2" id="sample6_address2"></input>
 
-	<div class="form-row col-3" style="text-align:left;color:#ffffff">
-		<div class="col-4">
-   		ì£¼ì†Œ<input type="text" name="zipcode" size="10" id="sample6_postcode" class="form-control" readonly></input>
-   		</div>
-   		<div class="col-1">
-   		ã€€<button type="button" class="btn btn-success" onClick="sample6_execDaumPostcode()">ìš°íŽ¸ë²ˆí˜¸ì°¾ê¸°</button>
-   		</div>
-   	</div>
-   	
-   	<br>
-   	
- 	<div class="col-3">
-   		<input type="text" name="addr1" id="sample6_address" class="form-control" readonly></input>
-   	</div>   		
-   	<br>
-   	<div class="col-3">
-   		<input type="text" name="addr2" id="sample6_address2" class="form-control"></input>
-   	</div>
-	<br>
-	<div class="col-3">
-	   <input type="submit" value="ê°€ìž…í•˜ê¸°" onclick="insertoversea_member()" class="btn btn-primary btn-lg btn-block" />
-	</div>
+   </td>
+  </tr>
+
+  <tr>
+   <td align="center" colspan="2">
+   <hr>
+   <br>
+    <input type="submit" value="°¡ÀÔÇÏ±â" onclick="regChk()">&nbsp;
+   </td>
+  </tr>
+ </table>
 </form>
 
-</center>
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 <script>
     function sample6_execDaumPostcode() {
         new daum.Postcode({
             oncomplete: function(data) {
-                // íŒì—…ì—ì„œ ê²€ìƒ‰ê²°ê³¼ í•­ëª©ì„ í´ë¦­í–ˆì„ë•Œ ì‹¤í–‰í•  ì½”ë“œë¥¼ ìž‘ì„±í•˜ëŠ” ë¶€ë¶„.
+                // ÆË¾÷¿¡¼­ °Ë»ö°á°ú Ç×¸ñÀ» Å¬¸¯ÇßÀ»¶§ ½ÇÇàÇÒ ÄÚµå¸¦ ÀÛ¼ºÇÏ´Â ºÎºÐ.
 
-                // ê° ì£¼ì†Œì˜ ë…¸ì¶œ ê·œì¹™ì— ë”°ë¼ ì£¼ì†Œë¥¼ ì¡°í•©í•œë‹¤.
-                // ë‚´ë ¤ì˜¤ëŠ” ë³€ìˆ˜ê°€ ê°’ì´ ì—†ëŠ” ê²½ìš°ì—” ê³µë°±('')ê°’ì„ ê°€ì§€ë¯€ë¡œ, ì´ë¥¼ ì°¸ê³ í•˜ì—¬ ë¶„ê¸° í•œë‹¤.
-                var fullAddr = ''; // ìµœì¢… ì£¼ì†Œ ë³€ìˆ˜
-                var extraAddr = ''; // ì¡°í•©í˜• ì£¼ì†Œ ë³€ìˆ˜
+                // °¢ ÁÖ¼ÒÀÇ ³ëÃâ ±ÔÄ¢¿¡ µû¶ó ÁÖ¼Ò¸¦ Á¶ÇÕÇÑ´Ù.
+                // ³»·Á¿À´Â º¯¼ö°¡ °ªÀÌ ¾ø´Â °æ¿ì¿£ °ø¹é('')°ªÀ» °¡Áö¹Ç·Î, ÀÌ¸¦ Âü°íÇÏ¿© ºÐ±â ÇÑ´Ù.
+                var fullAddr = ''; // ÃÖÁ¾ ÁÖ¼Ò º¯¼ö
+                var extraAddr = ''; // Á¶ÇÕÇü ÁÖ¼Ò º¯¼ö
 
-                // ì‚¬ìš©ìžê°€ ì„ íƒí•œ ì£¼ì†Œ íƒ€ìž…ì— ë”°ë¼ í•´ë‹¹ ì£¼ì†Œ ê°’ì„ ê°€ì ¸ì˜¨ë‹¤.
-                if (data.userSelectedType === 'R') { // ì‚¬ìš©ìžê°€ ë„ë¡œëª… ì£¼ì†Œë¥¼ ì„ íƒí–ˆì„ ê²½ìš°
+                // »ç¿ëÀÚ°¡ ¼±ÅÃÇÑ ÁÖ¼Ò Å¸ÀÔ¿¡ µû¶ó ÇØ´ç ÁÖ¼Ò °ªÀ» °¡Á®¿Â´Ù.
+                if (data.userSelectedType === 'R') { // »ç¿ëÀÚ°¡ µµ·Î¸í ÁÖ¼Ò¸¦ ¼±ÅÃÇßÀ» °æ¿ì
                     fullAddr = data.roadAddress;
 
-                } else { // ì‚¬ìš©ìžê°€ ì§€ë²ˆ ì£¼ì†Œë¥¼ ì„ íƒí–ˆì„ ê²½ìš°(J)
+                } else { // »ç¿ëÀÚ°¡ Áö¹ø ÁÖ¼Ò¸¦ ¼±ÅÃÇßÀ» °æ¿ì(J)
                     fullAddr = data.jibunAddress;
                 }
 
-                // ì‚¬ìš©ìžê°€ ì„ íƒí•œ ì£¼ì†Œê°€ ë„ë¡œëª… íƒ€ìž…ì¼ë•Œ ì¡°í•©í•œë‹¤.
+                // »ç¿ëÀÚ°¡ ¼±ÅÃÇÑ ÁÖ¼Ò°¡ µµ·Î¸í Å¸ÀÔÀÏ¶§ Á¶ÇÕÇÑ´Ù.
                 if(data.userSelectedType === 'R'){
-                    //ë²•ì •ë™ëª…ì´ ìžˆì„ ê²½ìš° ì¶”ê°€í•œë‹¤.
+                    //¹ýÁ¤µ¿¸íÀÌ ÀÖÀ» °æ¿ì Ãß°¡ÇÑ´Ù.
                     if(data.bname !== ''){
                         extraAddr += data.bname;
                     }
-                    // ê±´ë¬¼ëª…ì´ ìžˆì„ ê²½ìš° ì¶”ê°€í•œë‹¤.
+                    // °Ç¹°¸íÀÌ ÀÖÀ» °æ¿ì Ãß°¡ÇÑ´Ù.
                     if(data.buildingName !== ''){
                         extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
                     }
-                    // ì¡°í•©í˜•ì£¼ì†Œì˜ ìœ ë¬´ì— ë”°ë¼ ì–‘ìª½ì— ê´„í˜¸ë¥¼ ì¶”ê°€í•˜ì—¬ ìµœì¢… ì£¼ì†Œë¥¼ ë§Œë“ ë‹¤.
+                    // Á¶ÇÕÇüÁÖ¼ÒÀÇ À¯¹«¿¡ µû¶ó ¾çÂÊ¿¡ °ýÈ£¸¦ Ãß°¡ÇÏ¿© ÃÖÁ¾ ÁÖ¼Ò¸¦ ¸¸µç´Ù.
                     fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
                 }
 
-                // ìš°íŽ¸ë²ˆí˜¸ì™€ ì£¼ì†Œ ì •ë³´ë¥¼ í•´ë‹¹ í•„ë“œì— ë„£ëŠ”ë‹¤.
-                document.getElementById('sample6_postcode').value = data.zonecode; //5ìžë¦¬ ìƒˆìš°íŽ¸ë²ˆí˜¸ ì‚¬ìš©
+                // ¿ìÆí¹øÈ£¿Í ÁÖ¼Ò Á¤º¸¸¦ ÇØ´ç ÇÊµå¿¡ ³Ö´Â´Ù.
+                document.getElementById('sample6_postcode').value = data.zonecode; //5ÀÚ¸® »õ¿ìÆí¹øÈ£ »ç¿ë
                 document.getElementById('sample6_address').value = fullAddr;
 
-                // ì»¤ì„œë¥¼ ìƒì„¸ì£¼ì†Œ í•„ë“œë¡œ ì´ë™í•œë‹¤.
+                // Ä¿¼­¸¦ »ó¼¼ÁÖ¼Ò ÇÊµå·Î ÀÌµ¿ÇÑ´Ù.
                 document.getElementById('sample6_address2').focus();
             }
         }).open();

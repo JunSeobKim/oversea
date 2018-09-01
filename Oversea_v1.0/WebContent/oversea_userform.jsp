@@ -18,7 +18,7 @@
 </head>
 <body>
 <br><br><br><br><br><br><br><br><br><br><br>
-	<jsp:include page="user/oversea_after_login_nav.jsp" flush="false"></jsp:include>
+	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
 
     
     <a href="user/oversea_logoutProc.jsp">·Î±×¾Æ¿ô</a>

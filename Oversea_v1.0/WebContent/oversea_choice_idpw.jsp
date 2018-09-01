@@ -5,25 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Oversea 아이디 / 비밀번호 찾기</title>
-<link rel="stylesheet" href="assets/css/oversea_choice_idpw.css">
-	
 </head>
 <body>
-<jsp:include page="user/oversea_after_login_nav.jsp" flush="false"></jsp:include>
-<br><br><br><br><br><br><br><br><br>
-<div class="oversea_choice_main">
-	<a id="oversea_find_id_btn" href="oversea_find_id.jsp">
-		<img src="assets/images/find_id_btn.png" 
-			onmouseover="this.src='assets/images/find_id_btn_hover.png';"
-			onmouseout="this.src='assets/images/find_id_btn.png';"
-		 	alt="" width="200">
-	</a>
-	<a id="oversea_find_pw_btn" href="oversea_find_passwd.jsp">	
-		<img src="assets/images/find_pw_btn.png"  
-			onmouseover="this.src='assets/images/find_pw_btn_hover.png';"
-			onmouseout="this.src='assets/images/find_pw_btn.png';"
-			alt="" width="200">
-	</a>
-</div>
+
+	<jsp:include page="user/nav.jsp" flush="false"></jsp:include>
+	
+<br><br><br><br><br><br><br><br><br><br>
+
+	<a href="oversea_find_id.jsp"><img src="assets/images/find_id.png" alt="" width="200"></a>
+	<a href="oversea_find_passwd.jsp"><img src="assets/images/find_passwd.png" alt="" width="200"></a>
+
 </body>
 </html>
