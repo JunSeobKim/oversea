@@ -79,6 +79,6 @@ function emailCheck(){
 	  alert("중복체크할 이메일을 입력하십시오");
 	  return false;
 	 }
-	 var url = "oversea_emailCheck.jsp?email=" + email;
+	 var url = "user/oversea_emailCheck.jsp?email=" + email;
 	 window.open(url, "get", "height = 300, width = 500");
 	}
