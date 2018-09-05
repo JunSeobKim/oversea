@@ -17,9 +17,10 @@
 
 /* ---------- GENERAL ---------- */
 body {
-	font-color: #5a5656;
+	font-color: #ffffff;
 	font: 100%/1.5em 'Open Sans', sans-serif;
 	margin: 0;
+	text-align: center;
 	-webkit-touch-callout: none;
 	user-select: none;
 	-moz-user-select: none;
@@ -49,15 +50,19 @@ strong {
 
 /* ---------- LOGIN ---------- */
 #login {
+	background-color:  rgba(0, 0, 0, 0.4);
 	width: 450px;
 	text-align: center;
-	border: 1px #eceeef solid;
-	border-radius: 10px;;
-	padding: 60px 50px 60px 50px;
 	position:absolute;
-	top:35%;
+	padding-top: 60px;
+	padding-bottom:60px;
+	top:30%;
 	left:40%;
-	margin:-50px 0 0 -50px;
+	border-radius: 10px;
+	-moz-box-shadow: 5px 0px 70px black;
+	-webkit-box-shadow: 5px 0px 70px black;
+	box-shadow: 5px 0px 70px black;
+	margin: -50px 0px 0px -50px;	
 }
 
 form fieldset input[type="text"], input[type="password"] {
@@ -87,15 +92,15 @@ form fieldset input[type="submit"] {
 	-webkit-appearance: none;
 }
 
-form fieldset a {
+a {
 	
-	color: #8C8C8C;
+	font-color: #f4f4f4;
 	font-size: 16px;
 	
 }
 
-form fieldset a:hover {
-	color: #5D5D5D;
+a:hover {
+	font-color: #ffffff;
 	text-decoration: underline;
 }
 
@@ -111,41 +116,6 @@ form fieldset a:hover {
 	margin: 30px 125px;
 	text-align: center;
 	text-transform: uppercase;
-	width: 50px;
-}
-
-.facebook-before {
-	background: #0064ab;
-	border-radius: 3px 0px 0px 3px;
-	color: #f4f4f4;
-	display: block;
-	float: left;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	width: 50px;
-}
-
-.facebook {
-	background: #0079ce;
-	border: none;
-	border-radius: 0px 3px 3px 0px;
-	color: #f4f4f4;
-	cursor: pointer;
-	height: 50px;
-	text-transform: uppercase;
-	width: 250px;
-}
-
-.twitter-before {
-	background: #189bcb;
-	border-radius: 3px 0px 0px 3px;
-	color: #f4f4f4;
-	display: block;
-	float: left;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
 	width: 50px;
 }
 

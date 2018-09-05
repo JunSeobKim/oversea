@@ -5,14 +5,14 @@ function findpw(){
 	  return false;
 	 }
 	 
-	 var email = document.form.id.value;
+	 var email = document.form.email.value;
 	 var regx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	 if(email.length==0 || email==null){
 	  return false;
 	 }
 	 if (!regx.test(email)){
 	  alert("이메일 형식이 아닙니다..");
-	  document.form.id.focus();
+	  document.form.email.focus();
 	  return false;
 	 }
 	 
@@ -29,7 +29,6 @@ function findpw(){
 	  alert("핸드폰번호는 숫자만 입력가능합니다");
 	  return false;
 	 }
-	 
 	 document.form.submit();
 	}
 	

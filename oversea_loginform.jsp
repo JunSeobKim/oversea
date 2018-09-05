@@ -39,10 +39,10 @@ function loginchk(){
 
 </script>
 </head>
-<body style="background-color: #fff;">
+<body style="background-image: url('assets/images/background.jpg'); background-size: 100%;">
 <jsp:include page="user/oversea_after_login_nav.jsp" flush="false"></jsp:include>
 	<div id="login">
-      <h3><font color="black"><strong>Login</strong></font></h3>
+      <h3><font color="white"><strong>Login</strong></font></h3>
          <br>
          <form method="post" action="user/oversea_loginProc.jsp">
             <fieldset>
@@ -60,8 +60,6 @@ function loginchk(){
             </fieldset>         
          </form>
          <button class="join" onclick="location.href='oversea_joinform.jsp' ">Join us</button>
-   </div>
-		
-
+	</div>
 </body>
 </html>

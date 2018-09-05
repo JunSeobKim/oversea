@@ -67,9 +67,7 @@ if(loginEmail==null){
             </div>
         </nav>
         <!-- END: Navbar -->
-
     </header>
-    
     <!--
     START: Navbar Mobile
 -->

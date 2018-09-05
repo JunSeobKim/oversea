@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="assets/css/oversea_choice_idpw.css">
 	
 </head>
-<body>
+<body style="background-image: url('assets/images/background.jpg'); background-size: 100%;">
 <jsp:include page="user/oversea_after_login_nav.jsp" flush="false"></jsp:include>
-<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="oversea_choice_main">
 	<a id="oversea_find_id_btn" href="oversea_find_id.jsp" style="text-decoration:none">
 		<img src="assets/images/find_id_btn.png" 

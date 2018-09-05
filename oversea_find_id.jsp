@@ -26,47 +26,41 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
     
     <link rel="stylesheet" href="assets/css/combined.css">
+    <link rel="stylesheet" href="assets/css/oversea_find_id.css">
 	
 	<script language="JavaScript" src="assets/js/oversea_findid.js" charset="utf-8"></script>
 	
     <!-- END: Styles -->
 </head>
-<body style="background-image:url('assets/images/find_id_bg.png');background-size:100%; ">
+<body style="background-image:url('assets/images/background.jpg');background-size:100%; ">
 <center>
 
 	<jsp:include page="user/oversea_after_login_nav.jsp" flush="false"></jsp:include>
 	
-	
-	
-	<br><br><br><br><br><br><br><br><br><br>
-	
-	<center>
-	
-	<h2 style="color:#ffffff">아이디 찾기</h2>
-	<form action="user/oversea_find_idProc.jsp" name="form" method="post" margin-top="100">
-		
-	<div class="col-3" style="text-align:left;color:#ffffff">
-                    이름<input type="text" maxlength="10" name="name" class="form-control" required>
- 	</div>
-	<br>
-	<div class="form-row col-3" style="text-align:left;color:#ffffff">
-   		<div class="col">
-   	휴대폰<input type="number" name="ph1" maxlength="3" class="form-control" required>
-   		</div>
-   		<div class="col">
-   	&nbsp;<input type="number" name="ph2" maxlength="4" class="form-control" required>
-   		</div>
-   		<div class="col">
-   	&nbsp;<input type="number" name="ph3" maxlength="4" class="form-control" required>
-   		</div>
-   	</div>
-	<br>
-	<div class="col-3">
-		<button type="button" onclick="findid()" class="btn btn-primary btn-lg btn-block">아이디 찾기</button>
-	</div>
-	</form>
-	
-	</center>
-
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<center>
+		<h2><font color="white">아이디 찾기</font></h2>
+		<form action="user/oversea_find_idProc.jsp" name="form" method="post" margin-top="100">
+			
+		<div class="col-3" style="text-align:left;">
+	        <input type="text" maxlength="10" name="name" class="form-control" placeholder="이름" required>
+	 	</div>
+		<div class="form-row col-3" style="text-align:left;">
+	   		<div class="col">
+	   			&nbsp;<input type="number" name="ph1" maxlength="3" class="form-control" placeholder="010" required>
+	   		</div>
+	   		<div class="col">
+	   			&nbsp;<input type="number" name="ph2" maxlength="4" class="form-control" placeholder="0000" required>
+	   		</div>
+	   		<div class="col">
+	   			&nbsp;<input type="number" name="ph3" maxlength="4" class="form-control" placeholder="0000" required>
+	   		</div>
+	   	</div>
+		<br>
+		<div class="col-3">
+			<button type="button" onclick="findid()" class="btn btn-primary btn-lg btn-block">아이디 찾기</button>
+		</div>
+		</form>
+		</center>
 </body>
 </html>

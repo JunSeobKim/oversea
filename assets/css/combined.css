@@ -7636,7 +7636,7 @@ blockquote.nk-blockquote-style-1 cite {
 	line-height: 1.2;
 	background-color: #fff;
 	border: none;
-	border-radius: 0
+	border-radius: 5px;
 }
 
 select.form-control {
