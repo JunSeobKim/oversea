@@ -38,12 +38,6 @@
 	<div class="nk-main">
         <!-- START: Header Title -->
         <div class="nk-header-title nk-header-title-full">
-        	<!-- 
-            <div class="bg-image">
-                <div style="background-image: url('assets/images/background.png');"></div>
-                <div class="bg-image-overlay" style="background-color: rgba(12, 12, 12, 0.25);"></div>
-            </div>
-             -->
 			<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
 				<!--페이지
 				<ol class="carousel-indicators">
