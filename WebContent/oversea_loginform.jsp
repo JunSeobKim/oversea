@@ -39,7 +39,7 @@ function loginchk(){
 
 </script>
 </head>
-<body style="background-image: url('assets/images/background.jpg'); background-size: 100%;">
+<body>
 <jsp:include page="user/oversea_after_login_nav.jsp" flush="false"></jsp:include>
 	<div id="login">
       <h3><font color="white"><strong>Login</strong></font></h3>

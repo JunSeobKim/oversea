@@ -3,32 +3,12 @@ package oversea_member;
 import java.sql.Connection;
 import java.sql.ResultSet;
 
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.sql.DataSource;
-
 import java.sql.PreparedStatement;
 
 import oversea_member.oversea_member;
-import oversea_member.oversea_memberDao;
 import oversea_member.ConnUtil;
 
 public class oversea_memberDao {
-	private static oversea_memberDao instance = new oversea_memberDao();
-    //.jsp페이지에서 DB연동빈인 oversea_memberDao클래스의 메소드에 접근시 필요
-    public static oversea_memberDao getInstance() {
-        return instance;
-    }
-    
-    private oversea_memberDao() {}
-    
-    //커넥션풀로부터 Connection객체를 얻어냄
-    private Connection getConnection() throws Exception {
-        Context initCtx = new InitialContext();
-        Context envCtx = (Context) initCtx.lookup("java:comp/env");
-        DataSource ds = (DataSource)envCtx.lookup("jdbc/oversea");
-        return ds.getConnection();
-    }
 	public int insertoversea_member(oversea_member oversea){
 		  int rst = 0;
 		  Connection conn = null;

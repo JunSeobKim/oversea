@@ -1,43 +1,67 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+<%
+	String menu = request.getParameter("menu");
+	if (menu == null) {
+		menu = "oversea_main";
+	}
+	System.out.println(menu);
+%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Oversea 메인</title>
 
-	<meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
-    <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
-    <meta name="author" content="nK">
+<meta name="description"
+	content="Snow - Clean & Minimal Portfolio HTML template.">
+<meta name="keywords"
+	content="portfolio, clean, minimal, blog, template, portfolio website">
+<meta name="author" content="nK">
 
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- START: Styles -->
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
-    
-    <link rel="stylesheet" href="assets/css/combined.css">
-	<link rel="stylesheet" href="assets/css/scroll_button.css">
-	<link rel="stylesheet" href="assets/css/oversea_index.css">
-	
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-			
-	<script language="javascript" type="text/javascript" src="assets/js/scroll.js"></script>
-	
-    <!-- END: Styles -->
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700"
+	rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="assets/css/combined.css">
+<link rel="stylesheet" href="assets/css/scroll_button.css">
+<link rel="stylesheet" href="assets/css/oversea_index.css">
+
+<link
+	href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"	rel="stylesheet" />
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-latest.js"></script>
+<script	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script	src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script language="javascript" type="text/javascript" src="assets/js/scroll.js"></script>
+
+<!-- END: Styles -->
 
 </head>
 <body>
-	<jsp:include page="user/oversea_after_login_nav.jsp" flush="false"></jsp:include>
-	<div class="nk-main">
+	<header> 
+		<jsp:include page="user/oversea_after_login_nav.jsp" flush="false" /> 
+	</header>
+	<section> 
+		<div class="nk-main">
         <!-- START: Header Title -->
         <div class="nk-header-title nk-header-title-full">
+        	<!-- 
+            <div class="bg-image">
+                <div style="background-image: url('assets/images/background.png');"></div>
+                <div class="bg-image-overlay" style="background-color: rgba(12, 12, 12, 0.25);"></div>
+            </div>
+             -->
 			<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
 				<!--페이지
 				<ol class="carousel-indicators">
@@ -151,5 +175,9 @@
     <!-- START: Scripts -->
     <script src="assets/js/combined.js"></script>
     <!-- END: Scripts -->
+
+	</section>
+	<footer>
+	</footer>
 </body>
 </html>
