@@ -8,6 +8,8 @@
 	System.out.println(menu);
 %>
 
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -32,10 +34,8 @@
 	href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700"
 	rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" href="assets/css/combined.css">
-<link rel="stylesheet" href="assets/css/scroll_button.css">
-<link rel="stylesheet" href="assets/css/oversea_index.css">
-
+<link rel="stylesheet" href="/assets/css/scroll_button.css">
+<link rel="stylesheet" href="/assets/css/oversea_index.css">
 <link
 	href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"	rel="stylesheet" />
 <script type="text/javascript"

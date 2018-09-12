@@ -39,17 +39,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 
-<link href="assets/css/oversea_board.css" rel="stylesheet" type="text/css">
-<link href="../assets/css/oversea_board.css" rel="stylesheet" type="text/css">
-<link href="../assets/css/combined.css" rel="stylesheet" type="text/css">
-<link href="assets/css/combined.css" rel="stylesheet" type="text/css">
+<link href="/OVERSEA/assets/css/oversea_board.css" rel="stylesheet" type="text/css">
 
 <link	href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
 
 
 </head>
 <body>
-<jsp:include page="user/oversea_after_login_nav.jsp" flush="false" />	
+<jsp:include page="/user/oversea_after_login_nav.jsp" flush="false" />	
 	
 	<!-- header -->
 	<header class="header">
@@ -98,7 +95,7 @@
 			</tr>
 			</table>
 			<div class="wrap">
-     		   <a href="board/oversea_board_WriteForm.jsp" class="button">글쓰기</a>
+     		   <a href="oversea_board_WriteForm.jsp" class="button">글쓰기</a>
         		<!-- <a href="#" class="button2">Awesome Button</a> -->
     		</div>
 
@@ -129,14 +126,14 @@
 										if (article.getRe_level() > 0) {
 											wid = 5 * (article.getRe_level());
 							%> 
-							<img src="images/level.png" width="<%=wid%>" height="16"> 
-							<img src="images/re.png"> <%
+							<!-- <img src="images/level.png" width="<%=wid%>" height="16"> --> 
+							<!-- <img src="images/re.png"> --> <%
  	} else {
  %> 
- 	<img src="images/level.png" width="<%=wid%>" height="16"> 
+ 	<!-- <img src="images/level.png" width="<%=wid%>" height="16">--> 
  <%
  	}
- %> <a href="board/content.jsp?num=<%=article.getNum()%>&pageNum=<%=currentPage%>">
+ %> <a href="oversea_content.jsp?num=<%=article.getNum()%>&pageNum=<%=currentPage%>">
 								<%=article.getSubject()%>
 	</a>
 <%
@@ -160,7 +157,7 @@
 			</table>
 			<div class="bottom">
 			<div class="wrap">
-     		   <a href="board/oversea_board_WriteForm.jsp" class="button">글쓰기</a>
+     		   <a href="oversea_board_WriteForm.jsp" class="button">글쓰기</a>
         		<!-- <a href="#" class="button2">Awesome Button</a> -->
     		</div>
 

@@ -16,5 +16,5 @@
     BoardDBBean dbPro = BoardDBBean.getInstance();
     dbPro.insertArticle(article); 
 
-    response.sendRedirect("../oversea_board.jsp");
+    response.sendRedirect("oversea_board.jsp");
 %>

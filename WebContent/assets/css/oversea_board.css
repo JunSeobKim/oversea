@@ -107,6 +107,20 @@ body {
 	background-color: transparent;
 }
 
+.form a{
+	text-decoration: none;
+	color:black;
+	
+}
+
+.form a:hover{
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.form a:visited {text-decoration: none; color: green;}
+
+
 .form th, .form td {
 	padding: 0.75rem;
 	vertical-align: top;
@@ -164,6 +178,7 @@ tbody tr:first-child td {
 /* 게시물 위에 마우스 올렸을 시*/
 .form tbody tr:hover {
 	background-color: rgba(0, 0, 0, 0.04);
+	font-weight: bold;
 }
 
 .bottom{
@@ -175,17 +190,33 @@ display: inline;
 }
 
 .page{
-margin:0;
-padding:0;
+	margin:0;
+	padding:0;
 	position: relative;
 	
 }
+.page a{
+	text-decoration: none;
+	color:black;
+	
+}
+
+.page a:hover{
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.page a:active {text-decoration: none; color: green;}
+
+.page a:link {text-decoration: none; color: blue;}
+
+
 
 .wrap {
 
     position: relative;
     left: 47%;
-    margin-left: -29px;
+    margin-left: -59px;
     text-align: center;
 }
 
@@ -201,6 +232,9 @@ padding:0;
     text-decoration: none;
     border-radius: 4px;
     padding: 10px 10px;
+}
+.wrap a:hover{
+	text-decoration: none;
 }
 
 .wrap a.button {

@@ -11,8 +11,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
     
-    <link rel="stylesheet" href="assets/css/combined.css">
-    <link rel="stylesheet" href="../assets/css/combined.css">
+    <link rel="stylesheet" href="./assets/css/combined.css">
 
 <!-- END: Styles -->
 
@@ -33,14 +32,14 @@ if(loginEmail==null){
         <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top">
             <div class="container">
                 <div class="nk-nav-table">
-                    <a href="index.jsp" class="nk-nav-logo">
-                        <img src="assets/images/logo.png" alt="" width="200" class="nk-nav-logo-onscroll">
-                        <img src="assets/images/logo.png" alt="" width="200">
+                    <a href="/OVERSEA/index.jsp" class="nk-nav-logo">
+                        <img src="/OVERSEA/assets/images/logo.png" alt="" width="200" class="nk-nav-logo-onscroll">
+                        <img src="/OVERSEA/assets/images/logo.png" alt="" width="200">
                     </a>
 
                     <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
                         <li>
-                            <a href="index.jsp#about"><img width="25px" height="25px" alt="" src="assets/images/search_btn.png"></a>
+                            <a href="index.jsp#about"><img width="25px" height="25px" alt="" src="/OVERSEA/assets/images/search_btn.png"></a>
                         </li>
                         <li>
                             <a href="index.jsp#contact">여행지 추천</a>
@@ -49,10 +48,10 @@ if(loginEmail==null){
                             <a href="#">환율 정보</a>
                         </li>
                         <li>
-                            <a href="oversea_board.jsp">고객센터</a>
+                            <a href="/OVERSEA/board/oversea_board.jsp">고객센터</a>
                         </li>
                         <li>
-                            <a href="oversea_userform.jsp"><img width="25px" height="25px" alt="" src="assets/images/login_user.png"></a>
+                            <a href="/OVERSEA/oversea_userform.jsp"><img width="25px" height="25px" alt="" src="/OVERSEA/assets/images/login_user.png"></a>
                         </li>
                     </ul>
 

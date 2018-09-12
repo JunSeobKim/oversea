@@ -25,6 +25,7 @@
 	  int ref=article.getRef();
 	  int re_step=article.getRe_step();
 	  int re_level=article.getRe_level();
+
 %>
 
 <p>글내용 보기</p>
@@ -60,16 +61,16 @@
   <tr height="30">      
     <td colspan="4" align="right" > 
 	  <input type="button" value="글수정" 
-       onclick="document.location.href='updateForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
+       onclick="document.location.href='oversea_board_UpdateForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
 	   &nbsp;&nbsp;&nbsp;&nbsp;
 	  <input type="button" value="글삭제" 
-       onclick="document.location.href='deleteForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
+       onclick="document.location.href='oversea_board_DeleteForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
 	   &nbsp;&nbsp;&nbsp;&nbsp;
       <input type="button" value="답글쓰기" 
-       onclick="document.location.href='writeForm.jsp?num=<%=num%>&ref=<%=ref%>&re_step=<%=re_step%>&re_level=<%=re_level%>'">
+       onclick="document.location.href='oversea_board_WriteForm.jsp?num=<%=num%>&ref=<%=ref%>&re_step=<%=re_step%>&re_level=<%=re_level%>'">
 	   &nbsp;&nbsp;&nbsp;&nbsp;
        <input type="button" value="글목록" 
-       onclick="document.location.href='list.jsp?pageNum=<%=pageNum%>'">
+       onclick="document.location.href='oversea_board.jsp?pageNum=<%=pageNum%>'">
     </td>
   </tr>
 </table>    
