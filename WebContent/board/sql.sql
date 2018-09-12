@@ -1,3 +1,8 @@
+
+/* DB이름 : oversea*/
+/* table 이름 : board*/
+
+
 create table board(
 num int not null primary key auto_increment,
 writer varchar(10),
